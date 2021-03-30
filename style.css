@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+
+.tag{
+    font-size: 72px;
+   font-weight: bold;
+   text-align: center;
+
+   font-family: 'Lobster', cursive;
+
+   text-shadow: 2px 2px white;
+}
+.gamecontainer
+{
+    background-image: url('https://image.freepik.com/free-vector/mars-landscape-alien-planet-martian-background_107791-1781.jpg');
+
+    background-repeat: no-repeat;
+    
+    background-size: 100vw 100vh;
+    height: 100vh;
+    width: 100%;
+}
+
+.bheem{
+    background-image: url('https://qph.fs.quoracdn.net/main-qimg-adab2bd9cf8b364d6c87ccd6590fe8f1.webp');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 248px;
+    height: 183px;
+    background-size: cover;
+    bottom: 2vh;
+    left: 3vw;
+     
+}
+
+.hulk{
+    background-image: url('https://dragonza.io/static/7ce6412c493fa05200bc9ea168a1719b/46604/logo-dragon.png');
+
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 156px;
+    height: 150px;
+    background-size: cover;
+    bottom: 2vh;
+    left: 30vw;
+}
+
+.animatebheem{
+    animation: movebheem 0.6s linear;
+}
+@keyframes movebheem{
+    0%{
+        bottom: 0;
+    }
+
+    50%{
+         bottom: 40vh;
+    }
+
+    100%{
+        bottom: 0;
+    }
+}
+ 
+.obsticalemove{
+    animation: obsticalemove 4s linear infinite;
+}
+.gameover{
+    display:flex;
+    width: fit-content;
+    margin:auto;
+    font-size: larger;
+    font-family: 'Lobster', cursive;
+    margin-top: 15%;
+    transform: scale(9)
+}
+@keyframes obsticalemove{
+    0%{
+        left:100vw;
+    }
+
+    100%{
+        left:-10vw;
+
+    }
+}
+
+#scorecount{
+    display:flex;
+    width: fit-content;
+    position: absolute;
+    right: 0;
+    top:0;
+    font-size: larger;
+    font-family: 'Lobster', cursive;
+    margin-top:3vh;
+    margin-right: 4vw;
+    color: white;
+     background-color: black;
+    transform: scale(2.3);
+   
+}
+
